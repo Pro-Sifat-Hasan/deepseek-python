@@ -198,7 +198,7 @@ MIT License - See [LICENSE](LICENSE) for details
 
 ## Support
 
-For issues and feature requests, please [open an issue](https://github.com/yourusername/deepseek-python/issues)
+For issues and feature requests, please [open an issue](https://github.com/Pro-Sifat-Hasan/deepseek-python/issues)
 
 ---
 
