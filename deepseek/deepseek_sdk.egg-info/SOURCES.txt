@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.cfg
+setup.py
+deepseek/deepseek_sdk.egg-info/PKG-INFO
+deepseek/deepseek_sdk.egg-info/SOURCES.txt
+deepseek/deepseek_sdk.egg-info/dependency_links.txt
+deepseek/deepseek_sdk.egg-info/requires.txt
+deepseek/deepseek_sdk.egg-info/top_level.txt

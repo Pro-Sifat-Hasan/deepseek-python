@@ -1,0 +1,56 @@
+Metadata-Version: 2.2
+Name: deepseek-sdk
+Version: 0.1.0
+Summary: Python client for DeepSeek API
+Home-page: https://github.com/Pro-Sifat-Hasan/deepseek-python
+Author: Sifat Hasan
+Author-email: sihabhossan633@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: openai>=1.0.0
+
+# DeepSeek Python Client
+
+A Python client library for interacting with DeepSeek's language models.
+
+## Installation
+
+```bash
+pip install deepseek-sdk
+```
+
+## Usage
+
+```python
+from deepseek import DeepSeekClient
+
+# Initialize client
+client = DeepSeekClient(api_key="your-api-key")
+
+# Regular completion
+response = client.chat_completion(
+    messages=[{"role": "user", "content": "Hello"}]
+)
+print(response.choices[0].message.content)
+
+# Streaming response
+for chunk in client.stream_response(
+    messages=[{"role": "user", "content": "Hello"}]
+):
+    print(chunk.choices[0].delta.content or "", end="")
+
+# Async usage
+import asyncio
+
+async def main():
+    response = await client.async_chat_completion(
+        messages=[{"role": "user", "content": "Hello"}]
+    )
+    print(response.choices[0].message.content)
+
+asyncio.run(main())
+```
