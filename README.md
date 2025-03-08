@@ -79,8 +79,8 @@ asyncio.run(stream_response())
 ```python
 client = DeepSeekClient(
     api_key="your-api-key",
-    base_url="https://api.deepseek.com/v1",  # Custom endpoint
-    default_model="deepseek-chat-advanced"   # Set default model
+    base_url="https://api.deepseek.com",  # Custom endpoint
+    default_model="deepseek-reasoner"   # Set default model
 )
 ```
 
