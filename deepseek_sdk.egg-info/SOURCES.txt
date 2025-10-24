@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.cfg
+setup.py
+deepseek/__init__.py
+deepseek/deepseek.py
+deepseek_sdk.egg-info/PKG-INFO
+deepseek_sdk.egg-info/SOURCES.txt
+deepseek_sdk.egg-info/dependency_links.txt
+deepseek_sdk.egg-info/requires.txt
+deepseek_sdk.egg-info/top_level.txt
+tests/test_deepseek_client.py
+tests/test_imports.py
